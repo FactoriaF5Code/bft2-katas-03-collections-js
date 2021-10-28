@@ -1,4 +1,4 @@
-# Introducción a Javascript (2)
+# Introducción a Javascript: Colecciones (3)
 
 - Completa los tests en el archivo `tests.js`.
 - Abre el archivo `index.html` para ver qué tests están pasando y cuáles fallan.
