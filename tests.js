@@ -167,7 +167,7 @@ describe("Operaciones iterables", () => {
         ]);
     })
 
-    it("includes nos permite saber si un Array contiene un elemento", () => {
+    it("Buscando el planeta con Array.includes", () => {
 
         let knownExoplanets = [ "TOI-1298 b","TOI-132 b","TOI-1333 b","TOI-1338 b","TOI-1431 b","TOI-1444 b","TOI-1478 b","TOI-150.01","TOI-157 b","TOI-1601 b","TOI-163 b","TOI-1634 b","TOI-1685 b","TOI-169 b","TOI-172 b","TOI-1728 b","TOI-1749 b","TOI-1749 c"];
 
@@ -177,7 +177,7 @@ describe("Operaciones iterables", () => {
         expect(result).to.equal(true);        
     })
 
-    it("filter nos permite quedarnos con un subconjunto de elementos del Array", () => {
+    it("filtrando planetas", () => {
 
         let knownExoplanets = [ "TOI-1298 b","TOI-132 b","TOI-1333 b","TOI-1338 b","TOI-1431 b","TOI-1444 b","TOI-1478 b","TOI-150.01","TOI-157 b","TOI-1601 b","TOI-163 b","TOI-1634 b","TOI-1685 b","TOI-169 b","TOI-172 b","TOI-1728 b","TOI-1749 b","TOI-1749 c"];
 
@@ -186,7 +186,12 @@ describe("Operaciones iterables", () => {
         // p.ej. "Hola".endsWith('a') devuelve true
         let result = "???";
         
+
+        // todos los planetas de result terminan con la letra c
         expect(result.every( p => p.endsWith('c'))).to.equal(true);        
     })
 
+    // Bonus: Escribe un test como los anteriores con algún ejemplo que utilice 
+    // una lista alguna de las funciones que hemos visto, como map o filter.
+    
 })
